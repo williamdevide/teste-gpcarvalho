@@ -1,0 +1,149 @@
+/* Estilos gerais */
+:root {
+    --primary: #6244C5;
+    --secondary: #FFC448;
+    --light: #FAFAFB;
+    --dark: #12141D;
+    --white: #FFFFFF;
+    --black: #000000;
+    --whatsapp: #24cc63;
+    --error: #FF0000;
+}
+
+body {
+    color: var(--primary);
+    background: var(--white);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.borda {
+    border: 2px solid black;
+}
+
+.back-to-top {
+    color: var(--white);
+    background: var(--primary);
+    position: fixed;
+    display: block;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.whatsapp {
+    color: var(--white);
+    position: fixed;
+    display: block;
+    left: 45px;
+    bottom: 45px;
+    z-index: 1000;
+}
+
+.icons {
+    color: var(--secondary);
+    background: var(--primary);
+
+}
+
+.full-height-img {
+    height: 90vh;
+}
+
+/*** Button ***/
+.btn {
+    color: var(--white);
+    background: var(--primary);
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+/*** Navbar ***/
+.nav {
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** Container ***/
+.container {
+    color: var(--primary);
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.container h2 {
+    margin-top: 0;
+    font-size:xx-large
+}
+
+.container span {
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.container-information {
+    color: var(--primary);
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+.container-form {
+    color: var(--primary);
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.error-text {
+    color: var(--error);
+    background: var(--white);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary);
+}
+

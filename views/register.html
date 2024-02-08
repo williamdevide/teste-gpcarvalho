@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- div navbar -->
+    <div id="navbar"></div>
+
+    <!-- div navbar -->
+    <div id="whatsapp"></div>
+
+    <!-- div back-to-top -->
+    <div id="back-to-top"></div>
+
+    <!-- Div main start-->
+    <div class="container-fluid bg-light pb-5" id="home">
+        <!-- Container to create new user -->
+        <div class="container-form mx-auto login">
+            <h2 class="mb-md-5 ">Criar novo usuário</h2>
+            <form id="registerForm" class="registerForm" onsubmit="preventSubmit(event)">
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="name" class="col-sm-2 col-form-label text-sm-end">Nome</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control name validate" id="name" name="name" placeholder="Entre com seu nome" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="email" class="col-sm-2 col-form-label text-sm-end">E-mail</label>
+                    <div class="col-sm-7">
+                        <input type="email" class="form-control email validate" id="email" name="email" placeholder="Entre com seu e-mail" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="confirmEmail" class="col-sm-2 col-form-label text-sm-end">Confirmar E-mail</label>
+                    <div class="col-sm-7">
+                        <input type="email" class="form-control confirmEmail validate" id="confirmEmail" name="confirmEmail" placeholder="Repita seu e-mail" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="phone" class="col-sm-2 col-form-label text-sm-end">Telefone</label>
+                    <div class="col-sm-7">
+                        <input type="tel" class="form-control phone validate" id="phone" name="phone" placeholder="Entre com seu telefone" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="cpf" class="col-sm-2 col-form-label text-sm-end">CPF</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control cpf validate" id="cpf" name="cpf" placeholder="Entre com seu CPF" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="password" class="col-sm-2 col-form-label text-sm-end">Senha</label>
+                    <div class="col-sm-7">
+                        <input type="password" class="form-control password validate" id="password" name="password" placeholder="Entre com sua senha" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <label for="confirmPassword" class="col-sm-2 col-form-label text-sm-end">Confirmar Senha</label>
+                    <div class="col-sm-7">
+                        <input type="password" class="form-control confirmPassword validate" id="confirmPassword" name="confirmPassword" placeholder="Repita sua senha" required>
+                    </div>
+                </div>
+                <div class="mb-3 row justify-content-evenly">
+                    <div class="col-sm-5">
+                        <button class="btn btn-lg mt-5" onclick="registerUser()">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <p id="loginMessage"></p>
+        </div>      
+    </div>
+    <!-- Div main end-->
+
+    <!--  -->
+
+    <!-- Scripts start -->
+    <script src="../controllers/appControllers.js"></script>
+    <script src="../assets/js/callComponents.js" type="module"></script>
+    <script src="../assets/js/valid.js"></script>
+    <script src="../assets/js/validaCPF.js"></script>
+    <script src="../models/userModel.js"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>

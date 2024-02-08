@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- div navbar -->
+    <div id="navbar"></div>
+
+    <!-- div navbar -->
+    <div id="whatsapp"></div>
+
+    <!-- div back-to-top -->
+    <div id="back-to-top"></div>
+
+
+    <!-- Div main start-->
+    <div class="container-fluid bg-light pb-5" id="home">
+        <div class="row align-content-around justify-content-evenly  ">
+            <!-- Container for user login -->
+            <div class="col-lg-5 container login">
+                <h2>Login</h2>
+                <form id="loginForm" onsubmit="return false;">
+                    <div id="msgError"></div>
+                    <input type="email" id="loginEmail" placeholder="E-mail" required>
+                    <input type="password" id="loginPassword" placeholder="Senha" required>
+                    <button class="btn btn-lg" type="submit" onclick="loginUser()">Entrar</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Div main end-->
+
+    <!-- Scripts start -->
+    <script src="../controllers/appControllers.js"></script>
+    <script src="../assets/js/callComponents.js" type="module"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>
